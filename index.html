@@ -8,16 +8,19 @@
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
 </head>
 <body>
-<!-->This is HTML-pattern of feedback form<!-->
+<!-- This is HTML-pattern of feedback form -->
 	<div class="container">
 	<h1>Feedback</h1>
 	<form>
-		<input type="email" name="email" placeholder="Email" class="form-control"><br>
-		<input type="text" name="name" placeholder="Name" class="form-control"><br>
-		<input type="phone" name="phone" placeholder="Phone" class="form-control"><br>
-		<textarea name="email" placeholder="Additional comments" class="form-control"></textarea><br>
-		<button type="button" name="button" class="btn btn-success">Send</button>
+		<input type="email" id="email" name="email" placeholder="Email" class="form-control"><br>
+		<input type="text" id="name" name="name" placeholder="Name" class="form-control"><br>
+		<input type="phone" id="phone" name="phone" placeholder="Phone" class="form-control"><br>
+		<textarea name="message" id="message" placeholder="Additional comments" class="form-control"></textarea><br>
+		<button type="button" id="sendMail" name="button" class="btn btn-success">Send</button>
 	</form>
+	<div id="errorMes"></div>
 	</div>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="js/formMail.js"></script>
 </body>
 </html>
